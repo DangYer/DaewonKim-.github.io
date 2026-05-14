@@ -170,24 +170,22 @@ h1 {
   margin: 0;
   justify-self: end;
   width: 245px;
+  padding: 9px;
+  border: 2px solid var(--burgundy);
+  background: var(--white);
+  box-shadow: 16px 16px 0 var(--burgundy-pale);
 }
 
 .portrait::before {
-  content: "";
-  display: block;
-  width: 70px;
-  height: 5px;
-  background: var(--burgundy);
-  margin: 0 0 12px auto;
+  content: none;
 }
 
 .portrait img {
   display: block;
-  width: 245px;
+  width: 100%;
   aspect-ratio: 4 / 5;
   object-fit: cover;
   object-position: center 20%;
-  border-bottom: 10px solid var(--burgundy);
 }
 
 /* Section style: no cards, just spacing and rules */
@@ -402,6 +400,26 @@ code { background: var(--cream-2); color: var(--burgundy); padding: 2px 5px; }
 .link-grid a:first-child { border-top: none; }
 .link-grid a:hover { color: var(--burgundy-dark); padding-left: 8px; }
 
+
+/* SCI badge */
+.sci-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 8px;
+  padding: 2px 7px 1px;
+  border: 1px solid #b8935a;
+  color: #b8935a;
+  background: #fff9ef;
+  font-family: 'Source Sans 3', system-ui, sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  line-height: 1.2;
+  vertical-align: middle;
+  transform: translateY(-1px);
+}
+
 /* Embedded CV preview */
 .cv-actions {
   margin: 18px 0 22px;
@@ -445,7 +463,7 @@ code { background: var(--cream-2); color: var(--burgundy); padding: 2px 5px; }
   .rail-footer { display: none; }
   .page { width: min(100% - 34px, var(--max)); padding-top: 30px; }
   .home-hero { grid-template-columns: 1fr; gap: 30px; align-items: start; }
-  .portrait { justify-self: start; width: min(260px, 100%); }
+  .portrait { justify-self: start; width: min(260px, 100%); box-shadow: 10px 10px 0 var(--burgundy-pale); }
   .portrait img { width: 100%; }
 }
 
