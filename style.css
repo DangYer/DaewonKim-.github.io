@@ -321,6 +321,27 @@ h1 {
   text-transform: uppercase;
 }
 
+.teaching-group {
+  padding-top: 2px;
+}
+
+.teaching-group + .teaching-group {
+  margin-top: 30px;
+}
+
+.teaching-role {
+  margin: 0 0 10px;
+  padding: 0 0 8px;
+  border-bottom: 2px solid var(--burgundy);
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 18px;
+  color: var(--burgundy-dark);
+}
+
+.teaching-group .entry-list {
+  border-bottom: none;
+}
+
 .compact-list p {
   margin: 0;
   padding: 12px 0;
