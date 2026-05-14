@@ -62,6 +62,18 @@ a { color: inherit; }
   line-height: 1.5;
 }
 
+.rail-subtitle a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, .32);
+  transition: color .15s ease, border-color .15s ease;
+}
+
+.rail-subtitle a:hover {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
 .rail-nav {
   display: flex;
   flex-direction: column;
@@ -167,25 +179,40 @@ h1 {
 
 
 .portrait {
+  position: relative;
   margin: 0;
   justify-self: end;
   width: 245px;
-  padding: 9px;
-  border: 2px solid var(--burgundy);
-  background: var(--white);
-  box-shadow: 16px 16px 0 var(--burgundy-pale);
+  padding: 0;
+  background: transparent;
 }
 
 .portrait::before {
-  content: none;
+  content: "";
+  position: absolute;
+  inset: -14px 14px 14px -14px;
+  border: 1.5px solid var(--burgundy);
+  z-index: 0;
+}
+
+.portrait::after {
+  content: "";
+  position: absolute;
+  inset: 16px -16px -16px 16px;
+  background: linear-gradient(180deg, rgba(107,31,42,.12), rgba(107,31,42,.06));
+  z-index: 0;
 }
 
 .portrait img {
+  position: relative;
+  z-index: 1;
   display: block;
   width: 100%;
   aspect-ratio: 4 / 5;
   object-fit: cover;
   object-position: center 20%;
+  border: 8px solid var(--white);
+  box-shadow: 0 16px 34px rgba(61,16,23,.12);
 }
 
 /* Section style: no cards, just spacing and rules */
@@ -319,27 +346,6 @@ h1 {
   font-weight: 700;
   letter-spacing: .12em;
   text-transform: uppercase;
-}
-
-.teaching-group {
-  padding-top: 2px;
-}
-
-.teaching-group + .teaching-group {
-  margin-top: 30px;
-}
-
-.teaching-role {
-  margin: 0 0 10px;
-  padding: 0 0 8px;
-  border-bottom: 2px solid var(--burgundy);
-  font-family: 'Libre Baskerville', Georgia, serif;
-  font-size: 18px;
-  color: var(--burgundy-dark);
-}
-
-.teaching-group .entry-list {
-  border-bottom: none;
 }
 
 .compact-list p {
@@ -484,7 +490,9 @@ code { background: var(--cream-2); color: var(--burgundy); padding: 2px 5px; }
   .rail-footer { display: none; }
   .page { width: min(100% - 34px, var(--max)); padding-top: 30px; }
   .home-hero { grid-template-columns: 1fr; gap: 30px; align-items: start; }
-  .portrait { justify-self: start; width: min(260px, 100%); box-shadow: 10px 10px 0 var(--burgundy-pale); }
+  .portrait { justify-self: start; width: min(260px, 100%); }
+  .portrait::before { inset: -10px 10px 10px -10px; }
+  .portrait::after { inset: 12px -12px -12px 12px; }
   .portrait img { width: 100%; }
 }
 
