@@ -266,7 +266,7 @@ h1 {
 }
 
 .prose {
-  max-width: 760px;
+  max-width: 100%;
 }
 
 .prose p,
