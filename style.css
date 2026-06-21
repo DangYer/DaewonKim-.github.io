@@ -397,8 +397,8 @@ h1 {
 
 .field-row {
   display: grid;
-  grid-template-columns: 24px minmax(0, 1fr);
-  gap: 14px;
+  grid-template-columns: 118px minmax(0, 1fr);
+  gap: 22px;
   padding: 17px 0;
 }
 
