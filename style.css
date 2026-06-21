@@ -259,6 +259,10 @@ h1 {
   font-weight: 700;
 }
 
+.field-tag:empty {
+  visibility: hidden;
+}
+
 .section h2::before {
   content: "";
   height: 4px;
