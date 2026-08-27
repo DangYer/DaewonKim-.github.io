@@ -175,6 +175,16 @@ h1 {
   backdrop-filter: blur(0.5px);
 }
 
+.welcome-section {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 250, 247, 0.97) 0%,
+    rgba(255, 250, 247, 0.95) 70%,
+    rgba(255, 250, 247, 0.78) 88%,
+    rgba(255, 250, 247, 0.20) 100%
+  );
+}
+
 
 .affiliation {
   margin: 18px 0 0;
