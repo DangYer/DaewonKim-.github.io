@@ -45,7 +45,7 @@ a { color: inherit; }
   bottom: 0;
   left: 260px;
   background: url("assets/home-hero-math.png") center top / cover no-repeat;
-  opacity: 0.65;
+  opacity: 0.20;
   filter: grayscale(100%);
   pointer-events: none;
   z-index: 0;
@@ -171,7 +171,7 @@ h1 {
   padding: 42px 28px 42px;
   border-top: 4px solid var(--burgundy);
   border-bottom: 4px solid var(--burgundy);
-  background: rgba(255, 250, 247, 0.52);
+  background: rgba(255, 250, 247, 0.78);
   backdrop-filter: blur(0.5px);
 }
 
