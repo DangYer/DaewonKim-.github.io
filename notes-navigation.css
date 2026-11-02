@@ -338,7 +338,7 @@ OTHER DEALINGS IN THE FONT SOFTWARE. */
 .rail-group .rail-nav{display:flex;flex-direction:column;gap:2px;margin:0 0 10px;padding-left:8px}
 .side-rail .rail-group .rail-nav a{display:block;padding:6px 6px 6px 10px;border-left:2px solid transparent;font-size:12px;font-weight:400;line-height:1.75;letter-spacing:.02em;text-transform:none;text-decoration:none;color:rgba(255,255,255,.76)}
 .side-rail .rail-group .rail-nav a:hover,.side-rail .rail-group .rail-nav a.active{color:#fff;border-left-color:#e0c28d;background:linear-gradient(90deg,#ffffff12,transparent)}
-.rail-group>.chapter-nav{margin:0 0 8px 8px}
+.rail-group>.chapter-nav{display:block;gap:0;margin:0 0 8px 8px;padding:0;list-style:none}
 .rail-part>summary{padding:10px 0 7px;font:600 11px/1.7 'Source Sans 3',sans-serif}
 .rail-part>summary::after{font-size:13px}
 .rail-part .chapter-nav{display:grid;gap:2px;margin:0 0 6px 4px;padding:0;list-style:none}
