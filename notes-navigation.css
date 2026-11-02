@@ -16,6 +16,6 @@
 .rail-part .chapter-nav{margin:0 0 6px 4px}
 .rail-part .chapter-nav a{display:flex;align-items:baseline;gap:9px;padding:7px 5px 7px 10px;border-left:2px solid transparent;color:#fff8f5bd;font-size:11px;line-height:1.65;text-decoration:none}
 .rail-part .chapter-nav a:hover,.rail-part .chapter-nav a.active{color:#fff8f5;border-left-color:#e0c28d;background:linear-gradient(90deg,#ffffff12,transparent)}
-.rail-part .chapter-no{flex:0 0 16px;font-family:Georgia,serif;color:#e0c28d}
+.rail-part .chapter-nav a .chapter-no{flex:0 0 24px;min-width:24px;white-space:nowrap;overflow-wrap:normal;word-break:normal;font-variant-numeric:tabular-nums;font-family:Georgia,serif;color:#e0c28d}
 body:not([data-page]) .side-rail:has(.rail-groups){overflow-y:auto;scrollbar-width:thin;scrollbar-color:#9c6570 transparent}
 @media(max-width:760px){body:not([data-page]) .side-rail:has(.rail-groups){overflow:visible;height:auto}.rail-groups{margin:20px 0 15px}.rail-group .rail-nav{flex-direction:column;flex-wrap:nowrap}.rail-group .rail-nav a{display:block}}
